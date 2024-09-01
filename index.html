@@ -1,0 +1,114 @@
+<!--Ejercicio Integrador: Página de Perfil Personal
+
+Ejercicio: Crea una página web de perfil personal que incluya los siguientes elementos:
+
+Encabezado: Un encabezado de nivel 1 con tu nombre.
+Imagen de perfil: Una imagen de perfil con un atributo alt descriptivo.
+Sección de información personal: Un párrafo con una breve biografía.
+Lista de intereses: Una lista desordenada con al menos tres intereses o hobbies.
+Tabla de información de contacto: Una tabla que incluya dos filas con tu información de contacto (correo electrónico y teléfono).
+Enlace a redes sociales: Enlaces a tus perfiles de redes sociales (puedes usar URLs ficticias).
+Formulario de contacto: Un formulario con los siguientes campos:
+Campo de texto para nombre
+Campo de correo electrónico
+Área de texto para mensaje
+Botón de envío-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Integrador: Página de Perfil Personal</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al perfil personal de Vick</h1>
+        <h2>Victoria Fabi</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Foto_perfil">Foto de perfil</a></li>
+            <li><a href="Sobre_mi">Sobre mi</a></li>
+            <li><a href="Intereses">Mis intereses</a></li>
+            <li><a href="Informacion_Contacto">Datos de contacto</a></li>
+            <li><a href="Redes_sociales">Mis redes</a></li>
+            <li><a href="Contacto">Contacto</a></li>
+        </ul>
+    </nav>   
+    <section id="Foto_perfil">
+        <img src="vic.jpg" alt="Foto de perfil de vick" height="200">
+    </section>
+
+    <section id="Sobre_mi">
+        <h3>Sobre mi</h3>
+        <p>Soy <b>Victoria Fabi</b>, actualmente estudiante de la <strong>Tecnicatura en Programación en UTN</strong> . Tengo el deseo de aplicar mis conocimientos y estoy preparada para nuevos desafíos y aprendizajes.</p>
+    <p>Estoy activamente buscando oportunidades, ya sea en pasantías o empleo, que me permitan crecer y aprender en este fascinante campo.</p>
+    <p>Siempre me he desempeñado en atención al público. Trabajé en <b>City Center Rosario</b> como croupier de póker, y mi último empleo fue en los comedores de la <b>UNR</b>, donde trabajé durante 6 años como responsable del área de gastronomía. Mis funciones incluían manejar diferentes grupos de trabajo, realizar funciones de caja, coordinar tareas y resolver conflictos.</p>
+    </section>
+
+    <section id="Intereses">
+        <h3>Mis hobbies</h3>
+        <ul>
+            <li>Me gusta el cine</li>
+            <li>Realizo natación</li>
+            <li>Me encanta la cocina y pastelería</li>
+        </ul>
+
+    </section>
+
+    <section id="Informacion_contacto">
+        <h3>Datos de contacto</h3>
+        <table border="1">
+            <tr>
+                <th>Tipo de Dato</th>
+                <th>Detalle</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><a href="victoria.fabi87@gmail.com">victoria.fabi87@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td>3416111234</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="Redes_sociales">
+        <h3>Mis redes</h3>
+        <p>A continuación, dejo mis redes sociales para que puedas conocer más sobre mí:</p>
+        <ul>
+            <li><a href="https://github.com/Victoriafabi/ProgramacionII-1Tup1.git" target="_blank">GitHub</a></li>
+            <li><a href="https://www.facebook.com " target="_blank">facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </section>
+
+    <!---Campo de texto para nombre
+Campo de correo electrónico
+Área de texto para mensaje
+Botón de envío-->
+    <section id="Contacto">
+        <h3>Contacto</h3>
+        <form action="link" method="post">
+            <fieldset>
+                <legend>Completa el formulario:</legend>
+                <label for="name" >Nombre </label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+                <br><br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su e-mail">
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <br><br>
+                <textarea name="mensaje" id="mensaje" required>
+                </textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+    </section>
+</body>
+</html>
